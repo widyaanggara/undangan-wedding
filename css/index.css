@@ -1,0 +1,116 @@
+:root{
+    --primary-color: #f0deab;
+
+    /* ======== Container Width ======== */
+    --container-width-lg : 80%;
+    --container-width-md: 85%;
+    --container-width-sm: 90%;
+
+    /* ======== Font Weight ======== */
+    --fw-normal : 400;
+    --fw-medium : 500;
+    --fw-semibold : 600;
+    --fw-bold : 700;
+
+    /* ======== Z Index ======== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    /* ======== Font Size ======== */
+    --h1-font : 2rem;
+    --h2-font : 1.5rem;
+    --h3-font : 1.25rem;
+    --normal-font: 1rem;
+    --small-font: 0.9rem;
+    --smaller-font: 0.813rem;
+    --tiny-font: 0.625rem;
+
+    /* ======== Font Family ======== */
+    --font-poppins : "Poppins", sans-serif;
+    --font-dynalight : "Dynalight", cursive;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../asset/CHE05228.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.gradient{
+    background-image: url(../asset/gradient.png);
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 3;
+}
+
+.home-content h3{
+    color: #eca75c;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--font-poppins);
+    letter-spacing: 0.4rem;
+    font-size: var(--small-font);
+}
+
+.home-content h1{
+    text-align: center;
+    font-family: var(--font-dynalight);
+    font-size: 3rem;
+    font-weight: var(--fw-medium);
+}
+
+.home-content p{
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-poppins);
+}
+
+.home-content h4{
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-medium);
+}
+
+.home-content .home-btn{
+    position: absolute;
+    bottom: 15%;
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-weight: var(--fw-medium);
+    padding: 1rem 1.3rem;
+    background: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 4px;
+
+    transition: ease .3s;
+}
+
+.home-content .home-btn:hover{
+    background-color: #fff;
+    color: #0c0c0c;
+}

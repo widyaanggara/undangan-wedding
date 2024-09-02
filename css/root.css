@@ -1,0 +1,110 @@
+/* ======== Font ======== */
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Bali Simbar';
+    src: url('../asset/Bali_Simbar.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ======== Root ======== */
+:root{
+    
+    /* ======== Container Width ======== */
+    --container-width-lg : 55%;
+    --container-width-md: 60%;
+    --container-width-sm: 90%;
+
+    /* ======== Font Weight ======== */
+    --fw-normal : 400;
+    --fw-medium : 500;
+    --fw-semibold : 600;
+    --fw-bold : 700;
+
+    /* ======== Z Index ======== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    /* ======== Font Size ======== */
+    --h1-font : 2rem;
+    --h2-font : 1.5rem;
+    --h3-font : 1.25rem;
+    --normal-font: 1rem;
+    --small-font: 0.9rem;
+    --smaller-font: 0.813rem;
+    --tiny-font: 0.625rem;
+
+    /* ======== Font Family ======== */
+    --font-poppins : "Poppins", sans-serif;
+    --font-dynalight : "Dynalight", cursive;
+}
+
+
+/* ======== Default ======== */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0c0c0c;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section{
+    padding: 4rem 0;
+}
+
+.container{
+    width: var(--container-width-sm);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Screen */
+@media screen and (min-width : 577px){
+    .container{
+        width: var(--container-width-md);
+    }
+}
+
+@media screen and (min-width : 769px){
+    
+}
+
+@media screen and (min-width : 992px){
+    .container{
+        width: var(--container-width-lg);
+    }
+}
